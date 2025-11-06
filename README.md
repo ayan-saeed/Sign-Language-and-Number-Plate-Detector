@@ -10,4 +10,4 @@ Real-time Sign Language Interpreter using Python, MediaPipe, and Scikit-learn. C
 5. Prediction Display - The system must overlay the predicted gesture label onto the live video feed above the detected hand.
 
 ## Further Requirements
-6. Implement into a Web Application 
+6. Implement into a Web Application

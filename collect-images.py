@@ -105,4 +105,4 @@ for class_id in range(NUM_CLASSES):
 
 print("\nData collection complete.")
 cap.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows() 

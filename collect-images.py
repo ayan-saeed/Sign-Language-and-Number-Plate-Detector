@@ -87,10 +87,6 @@ for class_id in range(NUM_CLASSES):
             print("Camera frame not available.")
             break
         frame = cv2.flip(frame, 1)
-        # Draws a bottom-left progress indicator like "23/100" so you know how many images have been captured
-        cv2.putText(frame, f'{counter + 1}/{IMAGES_PER_CLASS}', (10, frame.shape[0] - 20),cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255),2)
-        # Also display the current letter being captured
-        cv2.putText(frame, f'Letter: {class_label}', (10, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
         cv2.imshow("Sign Language Data Capture", frame)
         # Writes the current frame to disk as a JPEG; filename is the counter (1.jpg, 2.jpg, ..., 100.jpg)
         cv2.imwrite(os.path.join(class_path, f"{counter}.jpg"), frame)

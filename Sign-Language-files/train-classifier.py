@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 
 # Loads the preprocessed dataset that was saved earlier using pickle
-data_file = pickle.load(open('./data.pickle', 'rb'))
+data_file = pickle.load(open('data.pickle', 'rb'))
 data = np.asarray(data_file['data'])
 labels = np.asarray(data_file['labels'])
 # Splits the dataset into training and testing subsets
